@@ -1,4 +1,4 @@
-package com.bprocek1.pokemonsdk.error;
+package com.bprocek1.pokemonsdk.pokemon.error;
 
 public class ResourceNotFoundError extends Exception{
     public ResourceNotFoundError(String message) {

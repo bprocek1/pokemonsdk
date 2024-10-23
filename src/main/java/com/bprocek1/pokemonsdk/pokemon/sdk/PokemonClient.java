@@ -8,8 +8,6 @@ import java.net.http.HttpResponse;
 import java.text.MessageFormat;
 import java.util.function.Function;
 
-import org.apache.http.HttpStatus;
-
 import javax.net.ssl.SSLContext;
 
 /**
@@ -62,7 +60,7 @@ public class PokemonClient {
         HttpResponse<String> response = this.httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
 
         // Fail of non-200
-        if (response.statusCode() != HttpStatus.SC_OK) {
+        if (response.statusCode() != 200) {
             throw new IllegalStateException( String.format("Response returned with status code %d", response.statusCode()));
         }
 

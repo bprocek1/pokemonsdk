@@ -1,6 +1,6 @@
 package com.bprocek1.pokemonsdk.pokemon;
 
-import com.bprocek1.pokemonsdk.error.ResourceNotFoundError;
+import com.bprocek1.pokemonsdk.pokemon.error.ResourceNotFoundError;
 import com.bprocek1.pokemonsdk.pokemon.model.GenerationResponse;
 import com.bprocek1.pokemonsdk.pokemon.model.PokemonResponse;
 import com.bprocek1.pokemonsdk.pokemon.sdk.PokemonClient;
